@@ -20,8 +20,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "node canary.js && tsc",
-    "prepare": "node canary.js"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   },
   "devDependencies": {
     "@changesets/cli": "2.31.0",
